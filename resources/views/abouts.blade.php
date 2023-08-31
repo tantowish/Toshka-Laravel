@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -98,20 +98,20 @@
     <!-- Section timeline start -->
     <section id="journey" class="bg-white dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
         <div class="max-w-[250px] py-10 mx-auto realtive z-[999] sm:max-w-lg md:max-w-3xl md:py-10">
-            <h1 class="text-center text-3xl bold text-blue-600 font-bold my-5 md:mb-10 lg:text-5xl">Our Journey</h1>
+            <h1 class="text-center text-3xl bold text-blue-600 font-bold my-5 md:mb-10 lg:text-5xl dark:text-blue-500">Our Journey</h1>
             @include('timeline')
         </div>
     </section>
     <!-- Section timeline start -->
 
     <!-- Section plan start -->
-    <section id="plan" class="bg-slate-100 py-10">
+    <section id="plan" class="bg-slate-100 py-10 dark:bg-gray-800">
         <div class="my-5 lg:my-10">
-            <h1 class="text-center text-3xl bold text-blue-600 font-bold lg:text-5xl my-2 lg:my-4">Start your journey</h1>
-            <p class="text-center mx-auto max-w-sm text-base lg:text-lg">Check out our plan, find your best price</p>
+            <h1 class="text-center text-3xl bold text-blue-600 font-bold lg:text-5xl my-2 lg:my-4 dark:text-blue-500">Start your journey</h1>
+            <p class="text-center mx-auto max-w-sm text-base lg:text-lg dark:text-slate-300">Check out our plan, find your best price</p>
         </div>
         <div class="flex flex-wrap justify-center">
-            <div class="w-full max-w-xs p-4 my-3 mx-10 bg-white border border-gray-200 rounded-lg shadow-lg sm:p-8 dark:bg-gray-800 dark:border-gray-700 md:w-1/2 lg:w-1/3 lg:mx-10 md:max-w-sm">
+            <div class="w-full max-w-xs p-4 my-3 mx-10 bg-white border border-gray-200 rounded-lg shadow-lg sm:p-8 dark:bg-gray-900 dark:border-gray-700 md:w-1/2 lg:w-1/3 lg:mx-10 md:max-w-sm">
                 <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Standard plan</h5>
                 <div class="flex items-baseline text-gray-900 dark:text-white">
                     <span class="text-xl font-semibold">$</span>
@@ -165,7 +165,7 @@
                 <button type="button" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2 inline-flex justify-center w-full text-center md:py-2.5">Choose plan</button>
             </div>
             
-            <div class="w-full max-w-xs p-4 my-3 mx-10 bg-white border border-gray-200 rounded-lg shadow-lg sm:p-8 dark:bg-gray-800 dark:border-gray-700 md:w-1/2 lg:w-1/3 lg:mx-10 md:max-w-sm">
+            <div class="w-full max-w-xs p-4 my-3 mx-10 bg-white border border-gray-200 rounded-lg shadow-lg sm:p-8 dark:bg-gray-900 dark:border-gray-700 md:w-1/2 lg:w-1/3 lg:mx-10 md:max-w-sm">
                 <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Humble Bundle plan</h5>
                 <div class="flex items-baseline text-gray-900 dark:text-white">
                     <span class="text-3xl font-semibold">$</span>
@@ -219,7 +219,7 @@
                 <button type="button" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2 inline-flex justify-center w-full text-center md:py-2.5">Choose plan</button>
             </div>
 
-            <div class="w-full max-w-xs p-4 my-3 mx-10 bg-white border border-gray-200 rounded-lg shadow-lg sm:p-8 dark:bg-gray-800 dark:border-gray-700 md:w-1/2 lg:w-1/3 lg:mx-10 md:max-w-sm">
+            <div class="w-full max-w-xs p-4 my-3 mx-10 bg-white border border-gray-200 rounded-lg shadow-lg sm:p-8 dark:bg-gray-900 dark:border-gray-700 md:w-1/2 lg:w-1/3 lg:mx-10 md:max-w-sm">
                 <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Humble Bundle plan</h5>
                 <div class="flex items-baseline text-gray-900 dark:text-white">
                     <span class="text-3xl font-semibold">$</span>
@@ -272,13 +272,12 @@
                 </ul>
                 <button type="button" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2 inline-flex justify-center w-full text-center md:py-2.5">Choose plan</button>
             </div>
-            
         </div>
     </section>
     <!-- Section plan end -->
 
     <!-- Footer start -->
-    <footer id="footer" class="bg-white dark:bg-gray-900 mt-10">
+    <footer id="footer" class="bg-white dark:bg-slate-900 py-10">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
