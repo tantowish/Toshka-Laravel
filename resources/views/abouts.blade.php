@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth dark">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   @vite('resources/css/app.css')
   @vite('resources/js/script.js')
+
 </head>
 <body>
     <!-- Navbar start -->
     <nav class="bg-white border-gray-200 dark:bg-gray-900 z-10 relative shadow-sm">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" class="flex items-center">
+        <a href="https://github.com/tantowish" target="_blank" class="flex items-center">
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Toshka Group</span>
         </a>
-        <div class="flex md:order-2">
+        
+        <div class="flex md:order-3">
             <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
@@ -31,6 +33,16 @@
             </div>
             <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
             </div>
+            <div class="mt-3 items-center pl-0 md:mt-0 md:pl-8 hidden md:flex">
+                <div class="flex">
+                    <input type="checkbox" class="hidden" id="dark-toggle">
+                    <label for="dark-toggle">
+                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                            <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                        </div>
+                    </label>
+                </div>
+            </div>
             <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -41,12 +53,16 @@
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
             <div class="relative mt-3 md:hidden">
                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    
                 <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                 </svg>
                 </div>
                 <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
             </div>
+            
+            
+            
             <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
                 <a href="\" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
@@ -59,6 +75,16 @@
                 </li>
                 <li>
                 <a href="#footer" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                </li>
+                <li class="mt-3 items-center pl-3 md:mt-0 md:pl-8 flex md:hidden">
+                    <div class="flex">
+                        <input type="checkbox" class="hidden" id="dark-toggle2">
+                        <label for="dark-toggle2">
+                            <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                            </div>
+                        </label>
+                    </div>
                 </li>
             </ul>
             </div>
@@ -195,13 +221,13 @@
                         <svg class="flex-shrink-0 w-[14px] h-[14px] text-blue-600 dark:text-blue-500 md:w-4 md:h-4 aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                         </svg>
-                        <span class="text-sm font-normal leading-tight text-gray-500 md:text-base">Sketch Files</span>
+                        <span class="text-sm font-normal leading-tight text-gray-500 md:text-base dark:text-gray-400">Sketch Files</span>
                     </li>
                     <li class="flex space-x-3">
                         <svg class="flex-shrink-0 w-[14px] h-[14px] text-blue-600 dark:text-blue-500 md:w-4 md:h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                         </svg>
-                        <span class="text-sm font-normal leading-tight text-gray-500 md:text-base">API Access</span>
+                        <span class="text-sm font-normal leading-tight text-gray-500 md:text-base dark:text-gray-400">API Access</span>
                     </li>
                     <li class="flex space-x-3 line-through decoration-gray-500">
                         <svg class="flex-shrink-0 w-[14px] h-[14px] text-gray-400 dark:text-gray-500 md:w-4 md:h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -249,25 +275,25 @@
                         <svg class="flex-shrink-0 w-[14px] h-[14px] text-blue-600 dark:text-blue-500 md:w-4 md:h-4 aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                         </svg>
-                        <span class="text-sm font-normal leading-tight text-gray-500 md:text-base">Sketch Files</span>
+                        <span class="text-sm font-normal leading-tight text-gray-500 md:text-base dark:text-gray-400">Sketch Files</span>
                     </li>
                     <li class="flex space-x-3">
                         <svg class="flex-shrink-0 w-[14px] h-[14px] text-blue-600 dark:text-blue-500 md:w-4 md:h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                         </svg>
-                        <span class="text-sm font-normal leading-tight text-gray-500 md:text-base">API Access</span>
+                        <span class="text-sm font-normal leading-tight text-gray-500 md:text-base dark:text-gray-400">API Access</span>
                     </li>
                     <li class="flex space-x-3">
                         <svg class="flex-shrink-0 w-[14px] h-[14px] text-blue-600 dark:text-blue-500 md:w-4 md:h-4"" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                         </svg>
-                        <span class="text-sm font-normal leading-tight text-gray-500 md:text-base">Complete documentation</span>
+                        <span class="text-sm font-normal leading-tight text-gray-500 md:text-base dark:text-gray-400">Complete documentation</span>
                     </li>
                     <li class="flex space-x-3">
                         <svg class="flex-shrink-0 w-[14px] h-[14px] text-blue-600 dark:text-blue-500 md:w-4 md:h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                         </svg>
-                        <span class="text-sm font-normal leading-tight text-gray-500 md:text-base">24×7 phone & email support</span>
+                        <span class="text-sm font-normal leading-tight text-gray-500 md:text-base dark:text-gray-400">24×7 phone & email support</span>
                     </li>
                 </ul>
                 <button type="button" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2 inline-flex justify-center w-full text-center md:py-2.5">Choose plan</button>
@@ -281,7 +307,7 @@
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
-                <a href="https://flowbite.com/" class="flex items-center">
+                <a href="github.com/tantowish" class="flex items-center">
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Toshka Group</span>
                 </a>
             </div>
@@ -361,6 +387,8 @@
         </div>
     </footer>
     <!-- Footer end -->
+
+    
 
 </body>
 </html>
